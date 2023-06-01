@@ -1,0 +1,367 @@
+/* importing font */
+@font-face{
+    font-family: Franie-regular;
+    src: url(./Assets/Font/Web/WOFF2/Franie-Regular.woff2);
+
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('./Assets/Font/Satoshi-Regular.otf') format('otf');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
+
+@font-face{
+    font-family: Franie;
+    src: url(./Assets/Font/Web/WOFF2/Franie-ExtraLight.woff2);
+}
+
+@font-face{
+    font-family: Satoshi-Regular;
+    src: url(./Assets/Font/Satoshi-Regular.otf);
+}
+
+
+/* body style */
+body{
+    background-image: url("./Assets/Images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1E1E1E;
+    height: 100vh;
+}
+
+
+/* header */
+header{
+    margin-top: 20px;
+    width: 100%;
+    height: calc(50vh - 350px);
+}
+navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 80px;
+    padding: 0;
+    position: absolute;
+}
+.logo img{
+    width: 261px !important;
+    height: 87px !important;
+}
+
+
+/* Links style */
+ul{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+ul li{
+    display: inline-block;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 50px;
+    font-size: 16px;
+    font-style: bold;
+    font-family: Franie-Black;
+
+}
+li a{
+    text-decoration: none;
+
+    color: white;
+}
+
+li {
+    padding-left: 20px;
+}
+
+/* button */
+button{
+color: #fff;
+border-style: none;
+ background: linear-gradient(to right, rgba(69, 35, 176, 1), rgba(110, 142, 255, 1));
+margin: 10px;
+border-radius: 20px;
+width:150px;
+height: 50px;
+float: right;
+font-size: 16px;
+font-size: medium;
+cursor: pointer;
+
+}
+
+/* main */
+ h1{
+    position: relative;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Franie-regular;
+    text-align: center;
+}
+.anabel{
+position: absolute;
+top:300px;
+left: 366px;
+}
+
+div img {
+    width: 674px;
+    height: 674px;
+}
+
+.hat{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 100px;
+    left: 1045.82px;
+    transform: rotate(16.16deg);
+    z-index: 99;
+}
+
+.oval{
+    position: absolute;
+    width: 1079px;
+    height:409px;
+    left: 240px;
+    top: 359px;
+    background: linear-gradient(150.95deg, #7D6EB1 7.67%, #7D6EB1 147.46%);
+    filter: blur(150.047px);
+    z-index: -9999;
+
+}
+
+.wraper video{
+    border-radius: 100%;
+    position: absolute;
+    width: 600.05px;
+    height: 600.05px;
+    left: 405.48px;
+    top: 505.95px;
+    /* opacity: 0.4; */
+
+}
+
+video{
+object-fit: cover;
+}
+
+video{
+    animation:slide-top 0.4s linear both}
+    @keyframes slide-top{0%{transform:translateY(0)}
+    100%{transform:translateY(-100px)}}
+
+.rectangle{
+width: 400px;
+height: 300px;
+position: absolute;
+padding: 5px;
+top: 400px;
+left: 917px;
+box-sizing: border-box;
+background: linear-gradient(97.41deg, #D9D9D9 -192.76%, rgba(19, 0, 86, 0.38) -45.22%, rgba(217, 217, 217, 0) 111.83%);
+backdrop-filter: blur(22px);
+border-radius: 20px;
+}
+
+.rectangle p {
+    color: #fff;
+    line-height: 29px;
+    padding: 10px;
+    width: 333px;
+    font-family: Satoshi-Regular;
+    font-size: 16px;
+}
+
+.rectangle img{
+    width: 70px;
+    height: 70px;
+}
+
+.aside{
+display: flex;
+justify-content: space-between;
+}
+
+
+.brush{
+    position: absolute;
+    top: 220px;
+    left: 105px;
+}
+
+.eye img{
+ position: absolute;
+ top: 720px;
+ left: 1234px;
+ width: 120px;
+ height: 120px;
+}
+
+audio{
+    display:hidden
+}
+@media only screen and (min-width: 600px) {
+  .menu{
+    display: none;
+  }
+
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 600px) {
+    body{
+        height: 75%;
+    }
+header{
+    width: auto;
+}
+    navbar {
+        top: 10px;
+        left: -30px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: 0;
+    }
+
+    /* .nav_header ul{
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    ul li{
+        display: none;
+    }
+    .logo img{
+        width: 200px !important;
+        height: 50px !important;
+    }
+
+
+    .menu img{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+        left: -100px;
+
+    }
+    /* ANABEL */
+    h1{
+        position: relative;
+        padding-left: 1px;
+        top: 130px;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 1);
+        font-family: Franie-regular;
+        text-align: center;
+    }
+    .anabel{
+    position: absolute;
+    top:230px;
+    left: 5px;
+    }
+
+    div img {
+        width: 434px;
+        height: 474px;
+    }
+    /* hat and oval circle */
+    .hat{
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        top: 125px;
+        left: 335.82px;
+        transform: rotate(16.16deg);
+        z-index: 99;
+    }
+    .oval{
+        position: absolute;
+        width: 450px;
+        height:409px;
+        left: 10px;
+        top: 359px;
+        background: linear-gradient(150.95deg, #7D6EB1 7.67%, #7D6EB1 147.46%);
+        filter: blur(150.047px);
+        z-index: -9999;
+
+    }
+
+button{
+    display: none;
+}
+/* Video */
+
+.wraper video{
+    border-radius: 100%;
+    position: absolute;
+    width: 400.05px;
+    height: 400.05px;
+    left: 25px;
+    top: 485.95px;
+    /* opacity: 0.4; */
+
+}
+
+/* Rectangle */
+
+.rectangle{
+    width: 375px;
+    height: 300px;
+    position: absolute;
+    padding: 5px;
+    top: 670px;
+    left: 27px;
+    box-sizing: border-box;
+    background: linear-gradient(97.41deg, #D9D9D9 -192.76%, rgba(19, 0, 86, 0.38) -45.22%, rgba(217, 217, 217, 0) 111.83%);
+    backdrop-filter: blur(22px);
+    border-radius: 20px;
+    }
+
+    .rectangle p {
+        color: #fff;
+        line-height: 29px;
+        padding: 10px;
+        width: 333px;
+        font-family: Satoshi-Regular;
+        font-size: 16px;
+    }
+
+    .rectangle img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .aside{
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+    .brush{
+        position: absolute;
+        top: 220px;
+        left: 105px;
+    }
+
+    .eye img{
+     position: absolute;
+     top: 820px;
+     left: 304px;
+     width: 120px;
+     height: 120px;
+    }
+
+  }
