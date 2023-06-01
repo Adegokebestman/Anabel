@@ -259,7 +259,7 @@ header{
     }
     /* ANABEL */
     h1{
-        position: relative;
+        position: absolute;
         padding-left: 1px;
         top: 130px;
         font-size: 90px;
