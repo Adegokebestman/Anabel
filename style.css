@@ -280,10 +280,10 @@ header{
     /* hat and oval circle */
     .hat{
         position: absolute;
-        width: 105px;
-        height: 105px;
-        top: 125px;
-        left: 335.82px;
+        width: 95px;
+        height: 95px;
+        top: 129px;
+        left: 328.82px;
         transform: rotate(16.16deg);
         z-index: 99;
     }
